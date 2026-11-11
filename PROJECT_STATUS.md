@@ -8,10 +8,10 @@ Last updated: 2026-11-11
 
 ## Completed
 - Header: centered container, text wordmark, nav (Games / Development / Contact), mobile menu.
-- Hero: two-line headline "ATMOSPHERIC WORLDS. / ASSEMBLED BY HAND." (lavender on "BY HAND."), description, buttons Explore RUSTGRAVE and Development log.
-- RUSTGRAVE showcase: centered stack of the official logo, description, genres (Stealth, Action, Horror, Exploration), "In development". Near-black background fading into the page.
+- Hero: two-line headline "ATMOSPHERIC WORLDS. / ASSEMBLED BY HAND." (lavender on "BY HAND."), description ("Creating atmospheric, art-led games shaped by tension, exploration and discovery."), buttons Explore RUSTGRAVE and Development log.
+- RUSTGRAVE showcase: centered stack of the official logo, description, genres (Stealth, Action, Horror, Exploration), "In development". Flat `#030304` background (verified by sampling rendered pixels), meeting the charcoal page with a clean edge. No gradients or overlays.
 - Development updates driven by `data/news.json` (one launch post so far).
-- Contact: `contact@fletcherassembly.com` as a `mailto:` link. The owner confirmed this mailbox is active.
+- Contact: "For collaborations and general enquiries:" plus `contact@fletcherassembly.com` as a `mailto:` link. The owner confirmed this mailbox is active.
 - Self-hosted fonts, SEO basics (title, description, canonical, Open Graph, sitemap, robots), custom 404.
 
 ## Outstanding issues
@@ -31,4 +31,5 @@ Last updated: 2026-11-11
 - The About section was removed deliberately: the site showcases games, not the developer. Do not re-add a biography.
 - Section numbering was removed deliberately; do not reintroduce it.
 - The previous angular "F" monogram was dropped in favour of the typographic wordmark. The favicon is a plain F.
+- Fletcher Assembly is an independent identity around one developer: copy must stay understated, never imply a large team or publisher (hero text deliberately omits the studio name).
 - Never present unconfirmed information (dates, features, press) as fact.
