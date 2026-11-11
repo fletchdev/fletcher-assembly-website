@@ -4,157 +4,129 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fletcher Assembly | Independent Game Studio</title>
-  <meta name="description" content="Fletcher Assembly is an independent game studio making atmospheric, art-focused games. Currently developing RUSTGRAVE, a post-apocalyptic stealth-action game.">
-  <meta name="theme-color" content="#121214">
+  <meta name="description" content="Fletcher Assembly creates atmospheric, art-led games shaped by tension, exploration and discovery. Currently developing RUSTGRAVE.">
+  <meta name="theme-color" content="#0e0e10">
   <link rel="canonical" href="https://fletcherassembly.com/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Fletcher Assembly | Independent Game Studio">
-  <meta property="og:description" content="Atmospheric, art-focused games. Now developing RUSTGRAVE.">
+  <meta property="og:description" content="Atmospheric worlds. Assembled by hand. Now developing RUSTGRAVE.">
   <meta property="og:url" content="https://fletcherassembly.com/">
+  <meta property="og:image" content="https://fletcherassembly.com/assets/images/rustgrave-logo.png">
   <meta name="twitter:card" content="summary">
+  <link rel="preload" href="assets/fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Fletcher Assembly","url":"https://fletcherassembly.com/","logo":"https://fletcherassembly.com/assets/logo.svg"}
+  {"@context":"https://schema.org","@type":"Organization","name":"Fletcher Assembly","url":"https://fletcherassembly.com/"}
   </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="brand" href="#home" aria-label="Fletcher Assembly, home">
-      <img src="assets/logo.svg" alt="" width="34" height="34">
-      <span>Fletcher<b>Assembly</b></span>
-    </a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
-    <nav id="nav" aria-label="Main">
-      <a href="#games">Games</a>
-      <a href="#about">About</a>
-      <a href="#development">Development</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container bar">
+      <a class="wordmark" href="#home" aria-label="Fletcher Assembly, home">
+        <span class="wm-top">Fletcher</span>
+        <span class="wm-bottom"><i>A</i><i>S</i><i>S</i><i>E</i><i>M</i><i>B</i><i>L</i><i>Y</i></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav"><span class="sr-only">Toggle </span>Menu</button>
+      <nav id="nav" aria-label="Main">
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#development">Development</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
     <!-- HOME -->
     <section id="home" class="hero">
-      <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
-          <defs>
-            <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#121214" stop-opacity="0"/>
-              <stop offset="1" stop-color="#121214"/>
-            </linearGradient>
-            <radialGradient id="glow" cx="0.72" cy="0.38" r="0.5">
-              <stop offset="0" stop-color="#A99BD0" stop-opacity="0.38"/>
-              <stop offset="1" stop-color="#A99BD0" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <rect width="1200" height="700" fill="url(#glow)"/>
-          <polygon points="700,700 820,180 900,180 1010,700" fill="#1a1a1e"/>
-          <polygon points="560,700 640,330 700,330 760,700" fill="#202026"/>
-          <polygon points="1000,700 1060,260 1120,260 1200,700" fill="#17171a"/>
-          <polygon points="380,700 440,400 500,400 540,700" fill="#1c1c20"/>
-          <polygon points="820,180 900,180 872,230 842,230" fill="#A99BD0" opacity=".55"/>
-          <rect y="400" width="1200" height="300" fill="url(#fog)"/>
-        </svg>
-      </div>
-      <div class="hero-inner">
-        <p class="eyebrow">Independent game studio</p>
-        <h1>Built piece<br>by <em>piece.</em></h1>
-        <p class="lede">Fletcher Assembly makes atmospheric, art-focused games. Quiet worlds, tense spaces, and things worth finding.</p>
-        <div class="actions">
-          <a class="btn primary" href="#games">Explore RUSTGRAVE</a>
-          <a class="btn" href="#development">Development log</a>
+      <div class="container hero-grid">
+        <div class="hero-main">
+          <p class="label"><span class="idx">00</span> Independent game studio</p>
+          <h1>Atmospheric worlds.<br>Assembled <span class="hl">by hand.</span></h1>
+          <p class="lede">Fletcher Assembly creates atmospheric, art-led games shaped by tension, exploration and discovery.</p>
+          <div class="actions">
+            <a class="btn primary" href="#games">Explore RUSTGRAVE</a>
+            <a class="btn" href="#development">Development log</a>
+          </div>
         </div>
+        <dl class="spec" aria-label="Studio at a glance">
+          <div><dt>Studio</dt><dd>Fletcher Assembly</dd></div>
+          <div><dt>Focus</dt><dd>Atmospheric games</dd></div>
+          <div><dt>Current project</dt><dd>RUSTGRAVE</dd></div>
+          <div><dt>Status</dt><dd>In development</dd></div>
+        </dl>
       </div>
     </section>
 
     <!-- GAMES -->
-    <section id="games" class="section">
-      <div class="wrap">
-        <p class="eyebrow">Games</p>
-        <h2>Featured game</h2>
-        <article class="game">
-          <div class="game-art" role="img" aria-label="Placeholder artwork for RUSTGRAVE. Final key art to come.">
-            <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <rect width="600" height="400" fill="#17171a"/>
-              <polygon points="0,400 0,250 120,200 220,280 340,170 460,260 600,210 600,400" fill="#202026"/>
-              <polygon points="0,400 0,320 160,290 300,340 440,300 600,330 600,400" fill="#121214"/>
-              <polygon points="340,170 352,120 364,170" fill="#A99BD0" opacity=".6"/>
-            </svg>
-            <span class="tag-placeholder">Placeholder art</span>
-          </div>
-          <div class="game-body">
-            <p class="status">In development</p>
-            <h3>RUSTGRAVE</h3>
-            <p>A post-apocalyptic, atmospheric stealth-action game with horror and exploration elements.</p>
-            <ul class="chips" aria-label="Genres">
-              <li>Stealth</li><li>Action</li><li>Horror</li><li>Exploration</li><li>Post-apocalyptic</li>
-            </ul>
-            <dl class="facts">
-              <div><dt>Platforms</dt><dd>To be announced</dd></div>
-              <div><dt>Release</dt><dd>To be announced</dd></div>
-            </dl>
-            <p class="note">Screenshots, trailer and store links will be added when they are ready.</p>
-          </div>
-        </article>
+    <section id="games" class="section project">
+      <div class="container">
+        <p class="label"><span class="idx">01</span> Games</p>
+        <h2 class="sr-only">RUSTGRAVE</h2>
+        <div class="project-stack">
+          <img class="project-logo" src="assets/images/rustgrave-logo.png" alt="RUSTGRAVE" width="1024" height="256">
+          <p class="project-desc">RUSTGRAVE is a post-apocalyptic stealth-action game set in a decaying world of fractured technology, uneasy coexistence and buried secrets. Explore a hostile environment where tension, observation and discovery shape the journey.</p>
+          <ul class="tags" aria-label="Genres">
+            <li>Stealth</li><li>Action</li><li>Horror</li><li>Exploration</li>
+          </ul>
+          <p class="status"><span aria-hidden="true"></span>In development</p>
+        </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section id="about" class="section alt">
-      <div class="wrap split">
+    <section id="about" class="section">
+      <div class="container two-col">
         <div>
-          <p class="eyebrow">About</p>
-          <h2>One developer.<br>Every part assembled by hand.</h2>
+          <p class="label"><span class="idx">02</span> About</p>
+          <h2>Games with a<br>sense of place.</h2>
         </div>
         <div class="prose">
-          <p>Fletcher Assembly is the independent studio of Fletcher, a game developer building atmospheric games with a strong sense of place and an art-first approach.</p>
-          <p>Working independently means every system, sound and shadow is a deliberate choice. The studio's focus is mood, tension and exploration over spectacle.</p>
-          <p class="note">Placeholder biography. A fuller personal story and portrait can be added here.</p>
+          <p class="big">Fletcher is an independent game developer focused on atmospheric games, environmental storytelling and distinctive worlds.</p>
+          <p>Fletcher Assembly is where those ideas come together: slow-building tension, spaces that feel lived in and then abandoned, and details players discover for themselves rather than being told.</p>
+          <p>Collaborators join the work where a project calls for them. The direction stays focused and personal.</p>
         </div>
       </div>
     </section>
 
     <!-- DEVELOPMENT -->
     <section id="development" class="section">
-      <div class="wrap">
-        <p class="eyebrow">Development</p>
+      <div class="container">
+        <p class="label"><span class="idx">03</span> Development</p>
         <h2>Updates &amp; news</h2>
         <div id="news" class="news" aria-live="polite">
-          <noscript><p>Enable JavaScript to see development updates.</p></noscript>
-          <p class="note">Loading updates…</p>
+          <noscript><p class="muted">Enable JavaScript to see development updates.</p></noscript>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section alt">
-      <div class="wrap split">
+    <section id="contact" class="section">
+      <div class="container two-col">
         <div>
-          <p class="eyebrow">Contact</p>
+          <p class="label"><span class="idx">04</span> Contact</p>
           <h2>Get in touch</h2>
         </div>
         <div class="prose">
-          <p>For press, collaboration or general enquiries:</p>
+          <p>For press, collaboration and general enquiries:</p>
           <p><a class="mail" href="mailto:contact@fletcherassembly.com">contact@fletcherassembly.com</a></p>
-          <p class="note">Placeholder address. It will work once email is set up for the domain.</p>
-          <ul class="social" aria-label="Social links">
-            <li><span>YouTube <small>coming soon</small></span></li>
-            <li><span>X / Twitter <small>coming soon</small></span></li>
-            <li><span>Bluesky <small>coming soon</small></span></li>
-            <li><span>Itch.io <small>coming soon</small></span></li>
-            <li><span>Steam <small>coming soon</small></span></li>
-          </ul>
+          <p class="muted small">This address is still being set up for the domain.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <img src="assets/logo.svg" alt="" width="22" height="22">
-    <p>&copy; <span id="year">2026</span> Fletcher Assembly. All rights reserved.</p>
+    <div class="container foot">
+      <span class="wordmark small" aria-hidden="true">
+        <span class="wm-top">Fletcher</span>
+        <span class="wm-bottom"><i>A</i><i>S</i><i>S</i><i>E</i><i>M</i><i>B</i><i>L</i><i>Y</i></span>
+      </span>
+      <p>&copy; <span id="year">2026</span> Fletcher Assembly. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="js/main.js" defer></script>

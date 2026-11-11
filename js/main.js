@@ -37,11 +37,13 @@
         var a = el('article', 'post');
         var t = el('time', '', new Date(p.date + 'T00:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }));
         t.setAttribute('datetime', p.date);
+        var m = el('div', 'post-meta');
+        m.appendChild(t);
+        if (p.tag) m.appendChild(el('span', 'tag', p.tag));
         var d = el('div');
-        if (p.tag) d.appendChild(el('span', 'tag', p.tag));
         d.appendChild(el('h3', '', p.title));
         d.appendChild(el('p', '', p.body));
-        a.appendChild(t); a.appendChild(d);
+        a.appendChild(m); a.appendChild(d);
         box.appendChild(a);
       });
     })
