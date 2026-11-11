@@ -70,29 +70,23 @@ nav a:hover::after,nav a:focus-visible::after{right:0}
 .nav-toggle:hover{border-color:var(--accent)}
 
 /* ---------- hero ---------- */
-.hero{min-height:min(100svh,880px);padding-top:var(--header-h);display:flex;border-bottom:1px solid var(--line);
-  background:radial-gradient(900px 500px at 88% 105%,rgba(169,155,208,.12),transparent 70%),var(--bg)}
-.hero-grid{display:flex;flex-direction:column;justify-content:space-between;gap:3rem;padding-top:clamp(3rem,8vh,6rem);padding-bottom:0}
-h1{font-size:clamp(3.4rem,10.6vw,9rem);line-height:.9;letter-spacing:-.005em;margin-bottom:2rem}
-h1 .hl{color:var(--accent)}
-.lede{max-width:34rem;font-size:1.25rem;color:var(--soft);margin-bottom:2.2rem}
+.hero{padding:calc(var(--header-h) + clamp(4rem,11vh,8rem)) 0 clamp(5rem,12vh,8.5rem);
+  background:radial-gradient(900px 500px at 88% 105%,rgba(169,155,208,.08),transparent 70%),var(--bg)}
+h1{font-size:min(10.2vw,8.4rem);line-height:.92;letter-spacing:-.005em;margin-bottom:clamp(1.6rem,3.5vw,2.4rem)}
+h1 .line{display:block;white-space:nowrap}
+h1 .hl{color:var(--accent);white-space:nowrap}
+.lede{max-width:30rem;font-size:1.2rem;line-height:1.6;color:var(--soft);margin-bottom:2.4rem}
 .actions{display:flex;flex-wrap:wrap;gap:1rem}
 .btn{display:inline-block;text-decoration:none;font:700 1rem/1 var(--display);text-transform:uppercase;letter-spacing:.2em;padding:1.05rem 1.9rem;border:1px solid var(--text);transition:background .2s,color .2s,border-color .2s}
 .btn:hover{background:var(--text);color:var(--bg)}
 .btn.primary{background:var(--text);color:var(--bg)}
 .btn.primary:hover{background:var(--accent);border-color:var(--accent)}
-.spec{display:grid;grid-template-columns:repeat(4,1fr);margin:0;border-top:1px solid var(--line)}
-.spec div{padding:1.25rem 1.5rem 1.4rem 0}
-.spec div+div{padding-left:1.5rem;border-left:1px solid var(--line)}
-.spec dt{font:500 .68rem/1 var(--mono);text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:.6rem}
-.spec dd{margin:0;font:700 1.2rem/1.1 var(--display);text-transform:uppercase;letter-spacing:.08em}
 
 /* ---------- sections ---------- */
 .section{padding:clamp(4.5rem,10vw,8rem) 0;border-bottom:1px solid var(--line)}
 .two-col{display:grid;grid-template-columns:5fr 7fr;gap:clamp(2rem,6vw,5rem);align-items:start}
 .two-col h2{margin-bottom:0}
 .prose p{color:var(--soft)}
-.prose .big{font-size:1.4rem;line-height:1.5;color:var(--text)}
 
 /* ---------- RUSTGRAVE ---------- */
 .project{background:var(--bg-alt)}
@@ -131,9 +125,6 @@ h1 .hl{color:var(--accent)}
 
 /* ---------- responsive ---------- */
 @media (max-width:900px){
-  .spec{grid-template-columns:1fr 1fr}
-  .spec div:nth-child(3){padding-left:0;border-left:0}
-  .spec div:nth-child(n+3){border-top:1px solid var(--line)}
   .two-col{grid-template-columns:1fr}
 }
 @media (max-width:760px){
@@ -148,10 +139,11 @@ h1 .hl{color:var(--accent)}
   .post-meta{flex-direction:row;gap:1.2rem}
   .tags li{padding:.2rem .9rem;letter-spacing:.16em}
 }
+@media (max-width:600px){
+  h1{font-size:clamp(3rem,15.5vw,4.6rem)}
+  h1 .line{white-space:normal}
+}
 @media (max-width:480px){
-  .spec dd{font-size:1.05rem}
-  .spec div{padding-right:.75rem}
-  .spec div+div{padding-left:.9rem}
   .btn{flex:1 1 100%;text-align:center}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
