@@ -1,0 +1,11 @@
+{
+  "_help": "To add a post: copy one block below, paste it at the TOP of the list, and edit the text. Keep the commas between blocks. Dates use YYYY-MM-DD.",
+  "posts": [
+    {
+      "date": "2026-11-11",
+      "title": "Fletcher Assembly is online",
+      "tag": "Studio",
+      "body": "The studio website is live. This is the home for development updates on RUSTGRAVE and future projects. More to come."
+    }
+  ]
+}
