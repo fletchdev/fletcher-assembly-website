@@ -27,6 +27,9 @@ No build step. Static files only.
 - `404.html`, `robots.txt`, `sitemap.xml`: SEO and error page. Update `sitemap.xml` if pages are added.
 - `CNAME` and `.nojekyll` are leftovers from an earlier GitHub Pages setup; Cloudflare ignores them.
 
+## Cache busting
+Cloudflare serves CSS/JS with a 4-hour browser cache. `index.html` and `404.html` reference them as `css/style.css?v=...` and `js/main.js?v=...`. **Whenever CSS or JS changes, bump the `v=` value in both files** (e.g. `20261111c` to the next), or visitors may see old styling.
+
 ## Preview and test
 - Preview: `python -m http.server 8000`, then open http://localhost:8000 (needed because the news loads via `fetch`).
 - Check desktop and mobile widths, no horizontal overflow, no missing assets, `node --check js/main.js` after JS edits.
