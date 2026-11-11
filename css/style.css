@@ -46,8 +46,7 @@ p{margin:0 0 1.2rem}
 /* ---------- type ---------- */
 h1,h2,h3{font-family:var(--display);text-transform:uppercase;font-weight:800;margin:0;line-height:.98}
 h2{font-size:clamp(2.4rem,5.5vw,4rem);letter-spacing:.005em;margin-bottom:2.5rem}
-.label{font:500 .74rem/1 var(--mono);text-transform:uppercase;letter-spacing:.24em;color:var(--muted);margin:0 0 1.6rem;display:flex;align-items:center;gap:.9rem}
-.label .idx{color:var(--accent)}
+.label{font:500 .74rem/1 var(--mono);text-transform:uppercase;letter-spacing:.24em;color:var(--accent);margin:0 0 1.6rem;display:flex;align-items:center;gap:.9rem}
 .label::after{content:"";flex:0 0 3rem;height:1px;background:var(--line)}
 
 /* ---------- wordmark ---------- */
