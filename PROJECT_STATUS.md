@@ -9,7 +9,7 @@ Last updated: 2026-11-11
 ## Completed
 - Header: centered container, text wordmark, nav (Games / Development / Contact), mobile menu.
 - Hero: two-line headline "ATMOSPHERIC WORLDS. / ASSEMBLED BY HAND." (lavender on "BY HAND."), description ("Creating atmospheric, art-led games shaped by tension, exploration and discovery."), buttons Explore RUSTGRAVE and Development log.
-- RUSTGRAVE showcase: centered stack of the official logo, description, genres (Stealth, Action, Horror, Exploration), "In development". Flat pure black `#000` background (verified by computed style and by sampling rendered pixels), meeting the charcoal page with a clean edge. No gradients or overlays.
+- RUSTGRAVE showcase: centered stack of the official logo, description, genres (Stealth, Action, Horror, Exploration), "In development". Uniform near-black `#08080a` background, with a 9rem vertical ease from the hero charcoal at the very top only (verified by computed style and rendered pixels). No glow or overlays.
 - Development updates driven by `data/news.json` (one launch post so far).
 - Contact: "For collaborations and general enquiries:" plus `contact@fletcherassembly.com` as a `mailto:` link. The owner confirmed this mailbox is active.
 - Self-hosted fonts, SEO basics (title, description, canonical, Open Graph, sitemap, robots), custom 404.
