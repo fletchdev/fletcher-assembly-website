@@ -13,7 +13,6 @@
 
 :root{
   --bg:#0e0e10;
-  --bg-alt:#131316;
   --line:#2a2a30;
   --text:#edebe6;
   --soft:#c4c2c9;
@@ -41,7 +40,6 @@ p{margin:0 0 1.2rem}
 .skip:focus{left:0}
 .container{width:100%;max-width:calc(var(--max) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter)}
 .muted{color:var(--muted)}
-.small{font-size:.9rem}
 
 /* ---------- type ---------- */
 h1,h2,h3{font-family:var(--display);text-transform:uppercase;font-weight:800;margin:0;line-height:.98}
@@ -70,7 +68,7 @@ nav a:hover::after,nav a:focus-visible::after{right:0}
 
 /* ---------- hero ---------- */
 .hero{padding:calc(var(--header-h) + clamp(4rem,11vh,8rem)) 0 clamp(5rem,12vh,8.5rem);
-  background:radial-gradient(900px 500px at 88% 105%,rgba(169,155,208,.08),transparent 70%),var(--bg)}
+  background:radial-gradient(900px 500px at 88% 55%,rgba(169,155,208,.08),transparent 70%),var(--bg)}
 h1{font-size:min(10.2vw,8.4rem);line-height:.92;letter-spacing:-.005em;margin-bottom:clamp(1.6rem,3.5vw,2.4rem)}
 h1 .line{display:block;white-space:nowrap}
 h1 .hl{color:var(--accent);white-space:nowrap}
@@ -88,7 +86,9 @@ h1 .hl{color:var(--accent);white-space:nowrap}
 .prose p{color:var(--soft)}
 
 /* ---------- RUSTGRAVE ---------- */
-.project{background:var(--bg-alt)}
+.project{background:
+  radial-gradient(ellipse 75% 60% at 50% 40%,rgba(255,255,255,.035),transparent 70%),
+  linear-gradient(to bottom,var(--bg) 0,#050506 22%,#050506 78%,var(--bg) 100%)}
 .project .label{justify-content:center}
 .project .label::before{content:"";flex:0 0 3rem;height:1px;background:var(--line)}
 .project-stack{display:flex;flex-direction:column;align-items:center;text-align:center;padding:1rem 0 0}
